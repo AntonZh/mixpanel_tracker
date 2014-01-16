@@ -1,5 +1,5 @@
 module MixpanelTracker
-  class ControllerHelpers
+  module ControllerHelpers
     def track_event(name)
       session[:mixpanel_events] = name
     end
