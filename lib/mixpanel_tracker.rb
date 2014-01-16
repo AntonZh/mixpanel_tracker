@@ -1,3 +1,5 @@
+require 'mixpanel_tracker/configuration'
+
 module MixpanelTracker
   class << self
     attr_writer :configuration

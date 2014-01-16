@@ -1,3 +1,3 @@
 MixpanelTracker.configure do |config|
-  config.token = "abcdefghijklmnopqrstuvwxyz123456"
+  config.access_token = <%= access_token_expr %>
 end

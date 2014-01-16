@@ -1,15 +1,16 @@
-require 'mixpanel_tracker/version'
+require File.expand_path('../lib/mixpanel_tracker/version', __FILE__)
 
-Gem::Specification.new do |s|
-  s.name        = 'mixpanel_tracker'
-  s.version     = MixpanelTracker::VERSION
-  s.platform    = Gem::Platform::RUBY
-  s.date        = '2013-01-16'
-  s.summary     = 'Mixpanel event tracker for Rails'
-  s.description = 'Mixpanel event tracker for Rails'
-  s.authors     = 'Anton Zhavoronkov'
-  s.email       = 'anton.zhavoronkov@gmail.com'
-  s.files       = ['lib/mixpanel_tracker.rb', 'lib/mixpanel_tracker/version.rb']
-  s.homepage    = 'http://rubygems.org/gems/mixpanel_tracker'
-  s.license     = 'MIT'
+Gem::Specification.new do |gem|
+  gem.name        = 'mixpanel_tracker'
+  gem.version     = MixpanelTracker::VERSION
+  gem.platform    = Gem::Platform::RUBY
+  gem.date        = '2013-01-16'
+  gem.summary     = 'Mixpanel event tracker for Rails'
+  gem.description = 'Declare events at controllers and they will be reported from views, easy.'
+  gem.authors     = 'Anton Zhavoronkov'
+  gem.email       = 'anton.zhavoronkov@gmail.com'
+  gem.files       = `git ls-files`.split($\)
+  gem.require_paths = ["lib"]
+  gem.homepage    = 'http://rubygems.org/gems/mixpanel_tracker'
+  gem.license     = 'MIT'
 end
