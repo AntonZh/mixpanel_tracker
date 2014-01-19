@@ -1,8 +1,13 @@
 module MixpanelTracker
   module ControllerHelpers
-    def track_event(name, options = {})
-      session[:mixpanel_events] ||= []
-      session[:mixpanel_events] << { name: name, options: options }
+    extend ActiveSupport::Concern
+
+    included do
+      helper_method :mixpanel
+      def mixpanel
+        s = session rescue nil
+        @mixpanel_tracker ||= MixpanelTracker::Tracker.new(s)
+      end
     end
   end
 end

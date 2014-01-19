@@ -1,5 +1,6 @@
-require 'mixpanel_tracker/railtie' if defined? Rails
 require 'mixpanel_tracker/configuration'
+require 'mixpanel_tracker/tracker'
+require 'mixpanel_tracker/railtie'
 
 module MixpanelTracker
   class << self

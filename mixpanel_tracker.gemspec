@@ -1,16 +1,22 @@
-require File.expand_path('../lib/mixpanel_tracker/version', __FILE__)
+$:.push File.expand_path("../lib", __FILE__)
 
-Gem::Specification.new do |gem|
-  gem.name        = 'mixpanel_tracker'
-  gem.version     = MixpanelTracker::VERSION
-  gem.platform    = Gem::Platform::RUBY
-  gem.date        = '2013-01-16'
-  gem.summary     = 'Mixpanel event tracker for Rails'
-  gem.description = 'Declare events at controllers and they will be reported from views, easy.'
-  gem.authors     = 'Anton Zhavoronkov'
-  gem.email       = 'anton.zhavoronkov@gmail.com'
-  gem.files       = `git ls-files`.split($\)
-  gem.require_paths = ["lib"]
-  gem.homepage    = 'http://rubygems.org/gems/mixpanel_tracker'
-  gem.license     = 'MIT'
+# Maintain your gem's version:
+require "mixpanel_tracker/version"
+
+# Describe your gem and declare its dependencies:
+Gem::Specification.new do |s|
+  s.name        = "mixpanel_tracker"
+  s.version     = MixpanelTracker::VERSION
+  s.authors     = ["Anton Zhavoronkov"]
+  s.email       = ["anton.zhavoronkov@gmail.com"]
+  s.homepage    = "http://rubygems.org/gems/mixpanel_tracker"
+  s.summary     = "Events tracker for Rails"
+  s.description = "Allows you to track mixpanel events"
+
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.test_files = Dir["test/**/*"]
+
+  s.add_dependency "rails", "~> 4.0.0"
+
+  s.add_development_dependency "sqlite3"
 end
