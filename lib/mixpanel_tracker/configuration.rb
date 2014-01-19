@@ -5,5 +5,9 @@ module MixpanelTracker
     def initialize
       enabled = true
     end
+
+    def disabled?
+      enabled == false
+    end
   end
 end
