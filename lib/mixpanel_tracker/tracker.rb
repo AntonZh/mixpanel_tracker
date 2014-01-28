@@ -3,6 +3,8 @@ require 'mixpanel_tracker/event'
 module MixpanelTracker
   class Tracker
     def initialize(session)
+      raise(ArgumentError, "No session provided") unless session
+
       @session = session
     end
 
