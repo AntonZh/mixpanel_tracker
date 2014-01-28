@@ -1,5 +1,6 @@
 mixpanel_tracker
 ===============
+[![Gem Version](https://badge.fury.io/rb/mixpanel_tracker.png)](http://badge.fury.io/rb/mixpanel_tracker)
 [![Code Climate](https://codeclimate.com/github/AntonZh/mixpanel_tracker.png)](https://codeclimate.com/github/AntonZh/mixpanel_tracker)
 [![Build Status](https://travis-ci.org/AntonZh/mixpanel_tracker.png?branch=master)](https://travis-ci.org/AntonZh/mixpanel_tracker)
 
