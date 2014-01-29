@@ -27,4 +27,5 @@ Gem::Specification.new do |s|
   s.add_development_dependency 'rspec-rails', '~> 2.14.1'
   s.add_development_dependency 'genspec', '~> 0.2.8'
   s.add_development_dependency 'pry', '~> 0.9.12'
+  s.add_development_dependency 'coveralls', '~> 0.7.0'
 end
