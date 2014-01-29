@@ -3,6 +3,7 @@ mixpanel_tracker
 [![Gem Version](https://badge.fury.io/rb/mixpanel_tracker.png)](http://badge.fury.io/rb/mixpanel_tracker)
 [![Code Climate](https://codeclimate.com/github/AntonZh/mixpanel_tracker.png)](https://codeclimate.com/github/AntonZh/mixpanel_tracker)
 [![Build Status](https://travis-ci.org/AntonZh/mixpanel_tracker.png?branch=master)](https://travis-ci.org/AntonZh/mixpanel_tracker)
+[![Coverage Status](https://coveralls.io/repos/AntonZh/mixpanel_tracker/badge.png?branch=master)](https://coveralls.io/r/AntonZh/mixpanel_tracker?branch=master)
 
 Provides ability to track [Mixpanel](https://mixpanel.com) events in Rails.
 Events can be tracked from controllers - and no funnel will break.
