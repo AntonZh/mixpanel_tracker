@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'pry'
 require 'coveralls'
+
 Coveralls.wear!
 
 ENV['RAILS_ENV'] = 'test'
