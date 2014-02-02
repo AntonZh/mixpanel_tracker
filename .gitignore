@@ -1,6 +1,6 @@
 *.gem
 *.rbc
-*/*.log
+spec/dummy/log/*
 .bundle
 .config
 coverage

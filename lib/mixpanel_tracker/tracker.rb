@@ -16,12 +16,7 @@ module MixpanelTracker
     private
 
     def queue_event(event)
-      if @session
-        @session[:mixpanel_events] ||= []
-        @session[:mixpanel_events] << event
-      else
-        puts "No session provided: event #{event.name} will not be tracked"
-      end
+      (@session[:mixpanel_events] ||= []) << event
     end
   end
 end
